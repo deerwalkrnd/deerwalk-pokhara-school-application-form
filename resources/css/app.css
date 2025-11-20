@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    input {
+        @apply border border-black w-full px-3 py-2;
+    }
+
+    .input {
+        @apply border border-black w-full px-3 py-2 rounded-md;
+    }
+
+    input:focus {
+        @apply outline-blue-500;
+    }
+
+    select:focus {
+        @apply outline-blue-500;
+
+    }
+
+    .label-grad {
+        @apply bg-gradient-to-br from-blue-500 to-blue-900 bg-clip-text inline-block text-transparent font-bold text-4xl
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: rgb(45, 45, 45);
+}
+
+.active {
+    font-weight: bold;
+    border: solid;
+    border-color: #21AA8C;
+    background-color: #21AA8C;
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
